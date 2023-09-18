@@ -1,0 +1,67 @@
+/* game board table */
+
+body{
+  margin-left: 35%;
+  margin-top: 10%;
+  background: linear-gradient(to left, #4f68e6, #b898f1);
+}
+
+h1 {
+  margin-left: 6%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: rgb(64, 89, 132);
+  font-size: 250%;
+}
+
+#board td {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #e3f1f3;
+  border-radius: 10px 10px 10px 10px ; 
+}
+
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: rgb(167, 70, 112);
+}
+
+.piece.p2 {
+  background-color: rgb(64, 89, 132);
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: rgb(116, 184, 230);
+}
+
+#p1-color, #p2-color, #start-game {
+  border-color: azure;
+  border-radius: 5px 5px 5px 5px ; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#start-game {
+  margin-top: .5%;
+  margin-left: 13%;
+}
+
+
+
+
+
